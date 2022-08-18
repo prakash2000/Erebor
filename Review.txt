@@ -2,3 +2,8 @@ Review Comments
 Integration Test
 CI/CD Pipeline Integration
 Azure Instance creation
+Angular 14
+Bootstrap 5
+CSS Grid
+NestJS 
+
