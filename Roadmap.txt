@@ -3,3 +3,6 @@ Q3 2022:
 Release Erebor 1.0 with basic functionalities 
 Add asset management page
 Add liability management page
+Add Expense Tracker with various categories 
+Spending analysis Graph
+Nerwort card design
