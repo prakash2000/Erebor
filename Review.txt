@@ -1,6 +1,7 @@
 Review Comments
 Integration Test
 CI/CD Pipeline Integration
+Sonor
 Azure Instance creation
 Angular 14
 Bootstrap 5
