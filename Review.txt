@@ -7,4 +7,5 @@ Angular 14
 Bootstrap 5
 CSS Grid
 NestJS 
-
+RxJs
+Postgre SQL
