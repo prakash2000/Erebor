@@ -5,4 +5,5 @@ Add asset management page
 Add liability management page
 Add Expense Tracker with various categories 
 Spending analysis Graph
-Nerwort card design
+Networth card design
+Loan details card design
