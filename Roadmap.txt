@@ -7,3 +7,4 @@ Add Expense Tracker with various categories
 Spending analysis Graph
 Networth card design
 Loan details card design
+Add investments based on category
