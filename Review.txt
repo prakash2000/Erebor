@@ -1,7 +1,7 @@
 Review Comments
 Integration Test
 CI/CD Pipeline Integration
-Sonor
+SonarQube: Code Quality and Code Security
 Azure Instance creation
 Angular 14
 Bootstrap 5
@@ -9,3 +9,4 @@ CSS Grid
 NestJS 
 RxJs
 Postgre SQL
+GraphQL
