@@ -9,3 +9,4 @@ Networth card design
 Loan details card design
 Add investments based on category
 Integrate chart.js library
+Unit Testing
