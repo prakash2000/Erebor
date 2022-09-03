@@ -3,9 +3,12 @@ Application to manage your personal finance
 
 Technologies Used:
 
-Typescript
+TypeScript,
+JavaScript,
 Angular
 
-NestJS
-TypeORM
-GraphQL
+NestJS,
+TypeORM,
+GraphQL,
+SCSS
+
