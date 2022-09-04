@@ -1,0 +1,58 @@
+.bal_card {
+    all: unset;
+    border-radius: 14px;
+    border: 1px solid #eee;
+    background: linear-gradient(275deg, #4762E6, #4cbbf2);
+    //color-light: #c2caf1;
+    color: #ffffff;
+    width: 400px;
+    margin: 0 8px 16px;
+    padding: 8px 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: all 0.2s ease-in-out;
+    line-height: 24px;
+}
+.bal_card:not(.highlight-card):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
+.card_title{
+    margin: 0 0 8px 0;
+}
+.bal_acc{
+    .acc_list{
+        list-style: none;
+        li{
+            padding: 2px 0;
+        }
+        input[type="radio"]{
+            vertical-align: middle;
+            cursor: pointer;
+        }
+        label{
+            vertical-align: middle;
+            padding-left: 3px;
+            cursor: pointer;
+        }
+    }
+}
+.bal_amt_info{
+    .bal_circle{
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        //border: 7px solid #03a9f4;
+        border: 7px solid #fefefe;
+        //radial_color_Selected: #20c6c6;
+        //color-light: #c2caf1;
+        // border: 7px solid #2980B9 #6DD5fa;        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .bal_amt{
+            font-size: 20px;            
+        }
+    }
+}

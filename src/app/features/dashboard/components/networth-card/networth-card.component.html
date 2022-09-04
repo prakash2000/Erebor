@@ -1,0 +1,36 @@
+<div class="asset_card">    
+    <div class="asset_list">
+       <h5 class="card_title">Net Worth Summary</h5>
+       <div class="asset_list_item">
+           <div class="asset_name">
+               <i class="asset_icon"></i>
+               <span>Total Assets</span>
+           </div>
+           <div class="asset_value">
+               <span>1 L</span>
+           </div>
+       </div>
+       <div class="asset_list_item">
+           <div class="asset_name">
+               <i class="asset_icon"></i>
+               <span>Total Liabilities</span>
+            </div>
+            <div class="asset_value">
+               <span>60K</span>
+            </div>
+       </div>       
+    </div>
+    <div class="networth_chart">
+        <!-- <div class="nw_circle">
+           <span class="nw_amt">Rs. 50000 </span>
+        </div> -->
+        <div style="display: block">
+            <canvas baseChart
+              [data]="doughnutChartData"
+              [type]="doughnutChartType"
+              [options]="chartOptions"
+              >
+            </canvas>
+          </div>
+    </div>
+</div>

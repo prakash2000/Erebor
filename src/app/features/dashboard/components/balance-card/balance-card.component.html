@@ -1,0 +1,24 @@
+<div class="bal_card">    
+    <div class="bal_acc">
+        <h5 class="card_title">Accound Balance</h5>
+        <ul class="acc_list">
+            <li>
+                <input type="radio" id="savings" name="account" (change)="onChange($event)" value="Savings"> 
+                <label for="savings">Savings Account</label>
+             </li>
+             <li>
+                <input type="radio" id="wallet" name="account" value="Wallet"> 
+                <label for="wallet">Food Wallet</label>
+             </li>
+             <li>
+                <input type="radio" id="cash" name="account" value="Cash"> 
+                <label for="cash">Cash</label>
+             </li>
+        </ul>
+    </div>
+    <div class="bal_amt_info">
+        <div class="bal_circle">
+           <span class="bal_amt">Rs. 50000 </span>
+        </div>
+    </div>
+</div>

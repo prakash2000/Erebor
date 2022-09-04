@@ -1,0 +1,107 @@
+.asset_card {
+    all: unset;
+    border-radius: 4px;
+    
+    @media (prefers-color-scheme: dark) {
+        border: 1px solid #3a3a3a;
+        background-color: #444;
+        color: white;
+    }
+    @media (prefers-color-scheme: light) {
+        border: 1px solid #eee;
+        background-color: #fafafa;
+        color: #333;
+    }
+    width: 400px;
+    margin: 0 8px 16px;
+    padding: 8px 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: all 0.2s ease-in-out;
+    line-height: 24px;
+}
+// .asset_card:not(.highlight-card):hover {
+//     transform: translateY(-3px);
+//     box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+// }
+.card_title{
+    margin: 0 0 8px 0;
+    font-size: 13px;
+}
+.asset_list{    
+    width: 100%;
+    .asset_list_item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        padding: 10px 10px;
+        background-color: transparent;
+        border-radius: 4px;
+        // @media (prefers-color-scheme: dark) {
+        //     background-color: #535353;
+        //     color: white;
+        // }
+        // @media (prefers-color-scheme: light) {
+        //     background-color: #fff;            
+        //     color: #333;
+        // }
+        cursor: pointer;
+        &:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+        }
+        cursor: hover;
+        .loan_type{
+            list-style: none;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            
+            .loan_dets{
+                .loan_icon{
+                    // width: 10px;
+                    // height: 10px;
+                    width: 48px;
+                    display: inline-block;
+                    padding: 10px;
+                    border-radius: 5px;
+                    background-color: #fff;
+                    // border-radius: 2px;
+                    // margin-right: 5px;
+                    // background-color: #4cbbf2;
+                    img{
+                        width: 100%;
+                    }
+                }
+                margin-left: 5px;
+                color: #555;
+                h5{
+                    font-size: 14px;
+                    margin: 0;                                    
+                }
+                span{            
+                    font-size: 12px;;
+                }
+            }        
+            .loan_payment_dets{
+                .emi_amount{
+                    font-weight: bold;
+                    font-size: 15px;
+                    color: var(--primary-color) !important;
+                    display: block;
+                }
+                .due_date{
+                    font-weight: bold;
+                    font-style: italic;
+                }
+            }
+        }
+        .loan_value{
+            span{
+                font-weight: bold;
+            }
+        }
+    }
+}

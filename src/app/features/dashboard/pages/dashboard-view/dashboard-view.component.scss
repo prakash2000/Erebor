@@ -1,0 +1,23 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  .wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .action_bar{
+    
+    height: calc(100vh - 65px);
+    @media (prefers-color-scheme: dark) {
+      background-color: #434343;
+      color: #fff;
+    }
+    @media (prefers-color-scheme: light) {
+      background-color: #f0f3ff;
+      color: #333;
+    }    
+  }
