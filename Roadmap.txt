@@ -1,0 +1,12 @@
+Project Road Map:
+Q3 2022:
+Release Erebor 1.0 with basic functionalities 
+Add asset management page
+Add liability management page
+Add Expense Tracker with various categories 
+Spending analysis Graph
+Networth card design
+Loan details card design
+Add investments based on category
+Integrate chart.js library
+Unit Testing
