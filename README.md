@@ -5,10 +5,10 @@ Technologies Used:
 
 TypeScript,
 JavaScript,
-Angular
+Angular,
+SCSS
 
 NestJS,
 TypeORM,
-GraphQL,
-SCSS
+GraphQL
 
