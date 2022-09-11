@@ -1,5 +1,5 @@
 # Erebor
-Application to manage your personal finance
+Application to manage your personal finance and track your networth 
 
 Technologies Used:
 
