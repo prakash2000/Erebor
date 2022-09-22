@@ -9,4 +9,3 @@ CSS Grid
 NestJS 
 RxJs
 Postgre SQL
-GraphQL
