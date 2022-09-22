@@ -15,6 +15,5 @@ Angular,
 SCSS
 
 NestJS,
-TypeORM,
-GraphQL
+TypeORM
 
