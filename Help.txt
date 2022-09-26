@@ -1,1 +1,2 @@
-Erebor helps to manage your personal finance and asset details securely. 
+Erebor helps to manage your personal finance and asset details securely.
+The main purpose of Erobor is to provide the user more control over their finance management. 
