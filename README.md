@@ -12,8 +12,10 @@ Technologies Used:
 TypeScript,
 JavaScript,
 Angular,
+RxJs
 SCSS
 
 NestJS,
 TypeORM
+
 
