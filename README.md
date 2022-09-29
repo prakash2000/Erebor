@@ -7,7 +7,7 @@ Savings management
 Expense tracking
 Networth management
 
-Technologies Used:
+# Technologies Used:
 
 TypeScript,
 JavaScript,
