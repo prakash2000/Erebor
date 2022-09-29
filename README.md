@@ -1,7 +1,7 @@
 # Erebor
 Application to manage your personal finance and track your networth 
 
-Features:
+# Features:
 
 Savings management
 Expense tracking
