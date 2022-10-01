@@ -12,10 +12,10 @@ Networth management
 TypeScript,
 JavaScript,
 Angular,
-RxJs
+RxJS
 SCSS
 
 NestJS,
 TypeORM
-
+MongoDB
 
