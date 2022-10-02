@@ -15,6 +15,7 @@ Angular,
 RxJS
 SCSS
 
+NodeJS
 NestJS,
 TypeORM
 MongoDB
