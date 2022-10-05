@@ -6,6 +6,7 @@ Application to manage your personal finance and track your networth
 Savings management
 Expense tracking
 Networth management
+Asset information
 
 # Technologies Used:
 
