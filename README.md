@@ -1,21 +1,22 @@
 # Erebor
 Application to manage your personal finance and track your networth 
 
-Features:
-
+# Features:
 Savings management
 Expense tracking
 Networth management
+Asset information
 
-Technologies Used:
+# Technologies Used:
 
 TypeScript,
 JavaScript,
 Angular,
-RxJs
+RxJS
 SCSS
 
+NodeJS
 NestJS,
 TypeORM
-
+MongoDB
 
