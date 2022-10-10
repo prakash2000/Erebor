@@ -12,7 +12,8 @@ Asset information
 TypeScript,
 JavaScript,
 Angular,
-RxJS
+RxJS,
+NodeJS
 SCSS
 
 NodeJS
