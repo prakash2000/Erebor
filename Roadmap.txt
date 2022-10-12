@@ -10,4 +10,3 @@ Loan details card design
 Add investments based on category
 Loan and EMI tracker
 Integrate chart.js library
-Unit Testing
