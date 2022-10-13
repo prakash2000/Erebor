@@ -1,4 +1,7 @@
 <!-- Toolbar -->
+<dialog *ngIf="showPopup">
+  <app-add-investment></app-add-investment>
+</dialog>
 <div class="toolbar" role="banner">
   <!-- <img
     width="40"
@@ -11,7 +14,7 @@
   </div>  
   <div class="date_picker_group"></div>
   <div class="action_group">
-    <button class="create_btn">Add Item</button>
+    <button class="create_btn" (click)="addItem()">Add Item</button>
     <a class="circle-link" target="_blank" rel="noopener">
       <svg xmlns="http://www.w3.org/2000/svg" width="24.607" height="23.447" viewBox="0 0 24.607 23.447">
         <title>Meetup Logo</title>
