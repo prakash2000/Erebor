@@ -7,8 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Erebor Wealth App';
-  public showPopup = false;
-  public addItem(){
-    this.showPopup = true;
-  }
+  public showAddItem = false;
+  
 }

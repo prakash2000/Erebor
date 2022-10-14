@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-add-investment',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddInvestmentComponent implements OnInit {
 
+  @Input() showPopup = false;
+  
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

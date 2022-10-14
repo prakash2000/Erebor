@@ -10,6 +10,7 @@ import { NetworthCardComponent } from './features/dashboard/components/networth-
 import { ErrorPageComponent } from './shared/components/error-page/error-page.component';
 import { AddInvestmentComponent } from './features/investment/components/add-investment/add-investment.component';
 import { LoanCardComponent } from './features/dashboard/components/loan-card/loan-card.component';
+import { PopupComponent } from './shared/components/popup/popup.component';
 
 @NgModule({
   declarations: [
@@ -19,16 +20,16 @@ import { LoanCardComponent } from './features/dashboard/components/loan-card/loa
     AssetsCardComponent,
     NetworthCardComponent,
     AddInvestmentComponent,
-    LoanCardComponent,
-    
+    LoanCardComponent    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgChartsModule,
-    ErrorPageComponent
+    ErrorPageComponent,
+    PopupComponent
   ],
-  exports: [ErrorPageComponent],
+  exports: [ErrorPageComponent, PopupComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

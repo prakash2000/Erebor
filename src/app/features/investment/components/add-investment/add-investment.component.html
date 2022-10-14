@@ -1,3 +1,19 @@
-<form>
-    <input type="text" placeholder="Category Type">
-</form>
+<div *ngIf="showPopup">
+    <div class="popup_backdrop"></div>
+    <div class="add_popup_wrapper">
+        <div class="popup_header">
+            <h4>
+                <span>Add a Transaction</span>
+                <i (click)="showPopup = false"> X </i>
+            </h4>            
+        </div>
+        <div class="popup_content">
+            <form>
+                <div class="input_group">
+                    <label for="category" class="form_label">Category</label>
+                    <input type="email" class="form_control" id="category" placeholder="category">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
