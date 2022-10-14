@@ -17,13 +17,13 @@
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   width: 500px;
-   height: 400px;
+   width: 450px;
+   height: 350px;
    border-radius: 5px;
    background-color: #fff;
    z-index: 16;
    .popup_header{      
-      padding: 10px 15px;
+      padding: 10px 20px;
       border-bottom: 1px solid #eee;
       h4{
          display: flex;
@@ -47,14 +47,15 @@
       }
    }
    .popup_content{
-      padding: 10px 15px;
+      padding: 10px 20px;
    }
 }
 
 .input_group{
-   margin: 10px 0;
+   margin: 15px 0;
    display: flex;
    justify-content: space-between;
+   align-items: center;
    .form_label{
       font-size: 14px;
       font-weight: 500;
@@ -65,5 +66,14 @@
       padding: 10px;
       border: 1px solid #aaa;
       border-radius: 3px;      
+   }
+   .submit_btn{
+      background-color: #4762E6;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 3px;
+      border: none;
+      cursor: pointer;
+      transition: 0.5s ease-in;
    }
 }
