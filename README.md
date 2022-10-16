@@ -15,6 +15,8 @@ Angular,
 RxJS,
 NodeJS
 SCSS
+J
+jQuery
 
 NodeJS
 NestJS,
