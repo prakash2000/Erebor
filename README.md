@@ -1,4 +1,4 @@
-# Erebor
+H# Erebor
 Application to manage your personal finance and track your networth 
 
 # Features:
@@ -13,9 +13,8 @@ TypeScript,
 JavaScript,
 Angular,
 RxJS,
-NodeJS
-SCSS
-J
+NodeJS,
+SCSS,
 jQuery
 
 NodeJS
