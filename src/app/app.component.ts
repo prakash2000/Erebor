@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Erebor Wealth App';
+  title = 'Erebor Wealth App1';
   public showAddItem = false;
   
 }
