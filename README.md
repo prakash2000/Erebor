@@ -1,4 +1,4 @@
-H# Erebor
+# Erebor  
 Application to manage your personal finance and track your networth 
 
 # Features:
