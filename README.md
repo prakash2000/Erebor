@@ -9,16 +9,16 @@ Asset information
 
 # Technologies Used:
 
-TypeScript,
-JavaScript,
-Angular,
-RxJS,
-NodeJS,
-SCSS,
+TypeScript  
+JavaScript  
+Angular  
+RxJS  
+NodeJS  
+SCSS  
 jQuery
 
-NodeJS
-NestJS,
-TypeORM
-MongoDB
+NodeJS  
+NestJS  
+TypeORM  
+MongoDB  
 
