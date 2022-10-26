@@ -12,7 +12,9 @@ export class AddInvestmentComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    let count = 0;    
+    let count = 0;
+    count++;
+    console.log(count);
   }
 
 }
