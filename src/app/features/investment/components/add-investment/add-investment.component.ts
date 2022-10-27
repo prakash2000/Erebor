@@ -8,13 +8,20 @@ import { Component, Input, OnInit } from '@angular/core';
 export class AddInvestmentComponent implements OnInit {
 
   @Input() showPopup = false;
-  
+  public count = 0;
+
   constructor() { }
 
-  ngOnInit(): void {
-    let count = 0;
-    count++;
-    console.log(count);
+  ngOnInit(): void {    
+    this.count++;
+    console.log(this.count);
   }
+
+  increaseCount(){
+    this.count++;
+    console.log(this.count);
+  }
+
+
 
 }
