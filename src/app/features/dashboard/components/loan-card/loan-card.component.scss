@@ -37,7 +37,8 @@
         align-items: center;
         margin-bottom: 10px;
         padding: 10px 10px;
-        background-color: transparent;
+        background-color: #fefefe;
+        border: 1px solid #ebe2e2;
         border-radius: 4px;
         // @media (prefers-color-scheme: dark) {
         //     background-color: #535353;
@@ -60,10 +61,13 @@
             justify-content: space-between;
             
             .loan_dets{
+                margin-left: 5px;
+                color: #555;
+                display: flex;                
                 .loan_icon{
                     // width: 10px;
                     // height: 10px;
-                    width: 48px;
+                    width: 52px;
                     display: inline-block;
                     padding: 10px;
                     border-radius: 5px;
@@ -74,16 +78,16 @@
                     img{
                         width: 100%;
                     }
-                }
-                margin-left: 5px;
-                color: #555;
-                h5{
-                    font-size: 14px;
-                    margin: 0;                                    
-                }
-                span{            
-                    font-size: 12px;;
-                }
+                }                
+                .loan_name{
+                    h5{
+                        font-size: 14px;
+                        margin: 0;                                    
+                    }
+                    span{            
+                        font-size: 12px;;
+                    }
+                }                
             }        
             .loan_payment_dets{
                 .emi_amount{
