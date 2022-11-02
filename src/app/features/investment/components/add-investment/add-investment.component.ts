@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-add-investment',
@@ -7,14 +7,18 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class AddInvestmentComponent implements OnInit {
 
-  @Input() showPopup = false;
+  @Input() showPopup: any;
   public count = 0;
 
   constructor() { }
 
-  ngOnInit(): void {    
+  ngOnInit(): void {
     this.count++;
     console.log(this.count);
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    console.log(changes);
   }
 
   increaseCount(){
