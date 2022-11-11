@@ -25,4 +25,8 @@ export class AddInvestmentComponent implements OnInit {
     this.count++;
     console.log(this.count);
   }
+
+  closePopup(){
+    this.showPopup = false;
+  }
 }
