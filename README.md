@@ -6,6 +6,7 @@ Savings management
 Expense tracking  
 Networth management  
 Asset information
+Loan management
 
 # Technologies Used:
 
