@@ -11,6 +11,7 @@ export class ErrorPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log(1);
   }
 
 }
