@@ -14,7 +14,6 @@ TypeScript
 JavaScript  
 Angular  
 RxJS  
-NodeJS  
 SCSS  
 jQuery
 
