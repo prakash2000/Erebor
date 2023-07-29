@@ -1,4 +1,5 @@
 import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
+import { CommonService } from '../../../../shared/services/common.service';
 
 @Component({
   selector: 'app-add-investment',
@@ -7,14 +8,17 @@ import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 })
 export class AddInvestmentComponent implements OnInit {
 
-  @Input() showPopup: any;
+  public showPopup: boolean = false;
   public count = 0;
 
-  constructor() { }
+  constructor(private commonService: CommonService) { }
 
   ngOnInit(): void {
     this.count++;
     console.log(this.count);
+    this.commonService.showPopup.subscribe(value => {
+      this.showPopup = value;
+    })
   }
 
   ngOnChanges(changes: SimpleChanges) {
