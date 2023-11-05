@@ -20,16 +20,17 @@ import { PopupComponent } from './shared/components/popup/popup.component';
     AssetsCardComponent,
     NetworthCardComponent,
     AddInvestmentComponent,
-    LoanCardComponent    
+    LoanCardComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgChartsModule,
     ErrorPageComponent,
-    PopupComponent
+    
   ],
-  exports: [ErrorPageComponent, PopupComponent],
+  exports: [ErrorPageComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

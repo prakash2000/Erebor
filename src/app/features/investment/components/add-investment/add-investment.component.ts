@@ -8,7 +8,7 @@ import { CommonService } from '../../../../shared/services/common.service';
 })
 export class AddInvestmentComponent implements OnInit {
 
-  public showPopup: boolean = false;
+  //public showPopup: boolean = false;
   public count = 0;
 
   constructor(private commonService: CommonService) { }
@@ -16,9 +16,9 @@ export class AddInvestmentComponent implements OnInit {
   ngOnInit(): void {
     this.count++;
     console.log(this.count);
-    this.commonService.showPopup.subscribe(value => {
-      this.showPopup = value;
-    })
+    // this.commonService.showPopup.subscribe(value => {
+    //   this.showPopup = value;
+    // });
   }
 
   ngOnChanges(changes: SimpleChanges) {
@@ -30,7 +30,8 @@ export class AddInvestmentComponent implements OnInit {
     console.log(this.count);
   }
 
-  closePopup(){
-    this.showPopup = false;
+  addInvestment(){
+    console.log("Save Investment")
   }
+  
 }

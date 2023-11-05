@@ -10,7 +10,7 @@
     gap: 10px;
   }
   .action_bar{
-    
+    padding: 10px;
     height: calc(100vh - 65px);
     @media (prefers-color-scheme: dark) {
       background-color: #434343;
@@ -20,4 +20,14 @@
       background-color: #f0f3ff;
       color: #333;
     }    
+  }
+
+  .card_title{
+    margin: 0 0 8px 0;
+    font-size: 13px;
+  }
+  .add_investment_card{
+    padding: 10px;
+    background-color: #535353;
+    border-radius: 5px;
   }

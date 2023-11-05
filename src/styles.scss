@@ -71,3 +71,22 @@ a:hover{ text-decoration: none; }
   }
 }
 //color1: #5692c8
+
+.input_group{
+    .form_control{
+        color: #fff;
+        border: 1px solid #999;
+        border-radius: 3px;
+        padding: 7px 10px;        
+        &:focus{
+            outline: none;
+            border:1px solid #aaa;
+        }
+    }
+    input[type=text]{
+        background-color: transparent;
+    }
+    input[type=date]{
+        background-color: transparent;
+    }
+}

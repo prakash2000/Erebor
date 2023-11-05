@@ -1,1 +1,14 @@
-<p>popup window works!</p>
+<div *ngIf="showPopup">
+    <div class="popup_backdrop"></div>
+    <div class="add_popup_wrapper">
+        <div class="popup_header">
+            <h4>
+                <span>Add a Transaction</span>
+                <i (click)="closePopup()"> X </i>
+            </h4>
+        </div>
+        <div class="popup_content">
+            <h4>Hello Popup Content</h4>
+        </div>
+    </div>
+</div>
