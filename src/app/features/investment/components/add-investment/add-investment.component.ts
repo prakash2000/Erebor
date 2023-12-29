@@ -31,7 +31,7 @@ export class AddInvestmentComponent implements OnInit {
   }
 
   addInvestment(){
-    console.log("Save Investment")
+    console.log("Save Investment");
   }
   
 }
