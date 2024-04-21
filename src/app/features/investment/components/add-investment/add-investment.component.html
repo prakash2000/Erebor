@@ -1,7 +1,7 @@
 <!-- <app-popup [showPopup]="showPopup">
 </app-popup> -->
 <div class="add_invest_form">
-    <form (ngSubmit)="addInvestment()" #addInvestForm="ngForm">
+    <form (ngSubmit)="addInvestment()" #investmentForm="ngForm">
         <div class="input_group">
             <label for="category" class="form_label">Category Type</label>
             <!-- <input type="text" class="form_control" id="category" placeholder="Category"> -->
@@ -40,7 +40,7 @@
         </div>
         <div class="input_group btn_grp">
             <label for="category" class="form_label"></label>
-            <button type="submit" class="submit_btn">Add</button>
+            <button type="submit" class="submit_btn" [disabled]="true">Add</button>
         </div>
     </form>
 </div>

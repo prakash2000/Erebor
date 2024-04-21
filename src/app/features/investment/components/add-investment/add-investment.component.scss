@@ -32,6 +32,12 @@
       &:hover{
          background-color: #4b66ef;
       }
+      &:disabled{
+         cursor: default;
+         background-color: #dde3ff;
+         color: #999;
+         border: 1px solid #dde3ff;
+      }
    }
    .cancel_btn{
       background-color: transparent;
