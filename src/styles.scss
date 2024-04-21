@@ -79,6 +79,12 @@ a:hover{ text-decoration: none; }
         border-radius: 3px;
         padding: 7px 10px;
         background-color: transparent;
+        @media (prefers-color-scheme: dark) {
+            color: #fff;
+        }
+        @media (prefers-color-scheme: light) {            
+            color: #333;
+        }
         &:focus{
             outline: none;
             border:1px solid #aaa;
@@ -89,6 +95,12 @@ a:hover{ text-decoration: none; }
             padding: 5px 10px;
             background-color: transparent;
             color: #fff;
+            @media (prefers-color-scheme: dark) {
+                color: #fff;
+            }
+            @media (prefers-color-scheme: light) {            
+                color: #333;
+            }
         }
     }
     input[type=text]{

@@ -10,7 +10,8 @@ export class AddInvestmentComponent implements OnInit {
 
   //public showPopup: boolean = false;
   public count = 0;
-
+  public categories = ['Equity', 'Chit', 'Mutual Fund', 'Debt Fund', 'SGB', 'Gold', 'FD', 'Other'];
+  public submitted = false;
   constructor(private commonService: CommonService) { }
 
   ngOnInit(): void {
@@ -19,12 +20,15 @@ export class AddInvestmentComponent implements OnInit {
     // this.commonService.showPopup.subscribe(value => {
     //   this.showPopup = value;
     // });
+
   }
 
   ngOnChanges(changes: SimpleChanges) {
     console.log(changes);
   }
 
+  onSubmit() { this.submitted = true; }
+  
   increaseCount(){
     this.count++;
     console.log(this.count);
