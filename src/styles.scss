@@ -71,3 +71,42 @@ a:hover{ text-decoration: none; }
   }
 }
 //color1: #5692c8
+
+.input_group{
+    .form_control{
+        color: #fff;
+        border: 1px solid #999;
+        border-radius: 3px;
+        padding: 7px 10px;
+        background-color: transparent;
+        @media (prefers-color-scheme: dark) {
+            color: #fff;
+        }
+        @media (prefers-color-scheme: light) {            
+            color: #333;
+        }
+        &:focus{
+            outline: none;
+            border:1px solid #aaa;
+        }
+    }
+    .select_box{
+        option{
+            padding: 5px 10px;
+            background-color: transparent;
+            color: #fff;
+            @media (prefers-color-scheme: dark) {
+                color: #fff;
+            }
+            @media (prefers-color-scheme: light) {            
+                color: #333;
+            }
+        }
+    }
+    input[type=text]{
+        background-color: transparent;
+    }
+    input[type=date]{
+        background-color: transparent;
+    }
+}

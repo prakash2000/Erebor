@@ -37,8 +37,16 @@
         align-items: center;
         margin-bottom: 10px;
         padding: 10px 10px;
-        background-color: #fefefe;
-        border: 1px solid #ebe2e2;
+        // background-color: #fefefe;
+        // border: 1px solid #ebe2e2;
+        @media (prefers-color-scheme: dark) {
+            background-color: #535353;
+            color: white;
+        }
+        @media (prefers-color-scheme: light) {
+            background-color: #fff;            
+            color: #333;
+        }
         border-radius: 4px;
         // @media (prefers-color-scheme: dark) {
         //     background-color: #535353;
@@ -62,7 +70,7 @@
             
             .loan_dets{
                 margin-left: 5px;
-                color: #555;
+                //color: #555;
                 display: flex;                
                 .loan_icon{
                     // width: 10px;
@@ -93,7 +101,7 @@
                 .emi_amount{
                     font-weight: bold;
                     font-size: 15px;
-                    color: var(--primary-color) !important;
+                   // color: var(--primary-color) !important;
                     display: block;
                 }
                 .due_date{

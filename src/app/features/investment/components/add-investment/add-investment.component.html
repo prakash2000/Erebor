@@ -1,35 +1,47 @@
-<div *ngIf="showPopup">
-    <div class="popup_backdrop"></div>
-    <div class="add_popup_wrapper">
-        <div class="popup_header">
-            <h4>
-                <span>Add a Transaction</span>
-                <i (click)="closePopup()"> X </i>
-            </h4>
+<!-- <app-popup [showPopup]="showPopup">
+</app-popup> -->
+<div class="add_invest_form">
+    <form (ngSubmit)="addInvestment()" #investmentForm="ngForm">
+        <div class="input_group">
+            <label for="category" class="form_label">Category Type</label>
+            <!-- <input type="text" class="form_control" id="category" placeholder="Category"> -->
+            <select class="form_control select_box" id="category"
+                    required [(ngModel)]="investment.category" name="category" #category="ngModel">
+                <option value="" selected disabled hidden>Select</option>
+                <option *ngFor="let category of categories" [value]="category">{{category}}
+            </select>            
         </div>
-        <div class="popup_content">
-            <form>
-                <div class="input_group">
-                    <label for="category" class="form_label">Category Type</label>
-                    <input type="email" class="form_control" id="category" placeholder="category">
-                </div>
-                <div class="input_group">
-                    <label for="category" class="form_label">Transaction Name</label>
-                    <input type="email" class="form_control" id="name" placeholder="Name">
-                </div>
-                <div class="input_group">
-                    <label for="category" class="form_label">Transaction Date</label>
-                    <input type="email" class="form_control" id="date" placeholder="Date">
-                </div>
-                <div class="input_group">
-                    <label for="category" class="form_label">Transaction Amount</label>
-                    <input type="email" class="form_control" id="amount" placeholder="Amount">
-                </div>
-                <div class="input_group">
-                    <label for="category" class="form_label"></label>
-                    <button type="submit" class="submit_btn">Add</button>
-                </div>
-            </form>
+        <div class="input_group">
+            <label for="category" class="form_label">Transaction Date</label>
+            <input type="date" class="form_control" id="date" placeholder="Date"
+                   required [(ngModel)]="investment.date" name="date" #date="ngModel">
+            <div [hidden]="date.valid || date.pristine"
+                class="alert alert-danger">
+                Date is required
+            </div>
         </div>
-    </div>
+        <div class="input_group">
+            <label for="category" class="form_label">Transaction Amount</label>
+            <input type="text" class="form_control" id="amount" placeholder="Amount"
+                    required [(ngModel)]="investment.amount" name="amount" #amount="ngModel">
+            <div [hidden]="amount.valid || amount.pristine"
+                class="alert alert-danger">
+                Amount is required
+            </div>
+        </div>
+        <div class="input_group">
+            <label for="category" class="form_label">Transaction Title</label>
+            <input type="text" class="form_control" id="title" placeholder="Title"
+                   required [(ngModel)]="investment.title" name="title" #title="ngModel">
+            <div [hidden]="title.valid || title.pristine"
+                class="alert alert-danger">
+                Title is required
+            </div>
+        </div>
+        <div class="input_group btn_grp">
+            <label for="category" class="form_label"></label>
+            <button type="submit" class="submit_btn" [disabled]="true">Add</button>
+        </div>
+    </form>
 </div>
+   

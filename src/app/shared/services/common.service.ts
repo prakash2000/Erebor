@@ -14,6 +14,10 @@ export class CommonService {
     this.popupState.next(state);
   }
 
+  // saveInvestment(){
+    
+  // }
+
   // public openPopup(){
   //   const showPopup = new Observable((observer) => {
   //     observer.next(true);

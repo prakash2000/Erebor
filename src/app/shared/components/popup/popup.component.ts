@@ -1,16 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { CommonService } from '../../services/common.service'
 
 @Component({
   selector: 'app-popup',
-  standalone: true,
   templateUrl: './popup.component.html',
   styleUrls: ['./popup.component.scss']
 })
 export class PopupComponent implements OnInit {
 
-  constructor() { }
+  @Input() showPopup = false;
+  constructor(private commonService: CommonService) { }
 
   ngOnInit(): void {
+  }
+
+  public closePopup(){
+    this.commonService.openPopup(false);
   }
 
 }
