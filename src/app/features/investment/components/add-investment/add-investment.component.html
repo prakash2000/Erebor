@@ -1,25 +1,42 @@
 <!-- <app-popup [showPopup]="showPopup">
 </app-popup> -->
 <div class="add_invest_form">
-    <form (ngSubmit)="addInvestment()">
+    <form (ngSubmit)="addInvestment()" #addInvestForm="ngForm">
         <div class="input_group">
             <label for="category" class="form_label">Category Type</label>
             <!-- <input type="text" class="form_control" id="category" placeholder="Category"> -->
-            <select class="form_control select_box">
+            <select class="form_control select_box" id="category"
+                    required [(ngModel)]="investment.category" name="category" #category="ngModel">
+                <option value="" selected disabled hidden>Select</option>
                 <option *ngFor="let category of categories" [value]="category">{{category}}
-            </select>
+            </select>            
         </div>
         <div class="input_group">
             <label for="category" class="form_label">Transaction Date</label>
-            <input type="date" class="form_control" id="date" placeholder="Date">
+            <input type="date" class="form_control" id="date" placeholder="Date"
+                   required [(ngModel)]="investment.date" name="date" #date="ngModel">
+            <div [hidden]="date.valid || date.pristine"
+                class="alert alert-danger">
+                Date is required
+            </div>
         </div>
         <div class="input_group">
             <label for="category" class="form_label">Transaction Amount</label>
-            <input type="text" class="form_control" id="amount" placeholder="Amount">
+            <input type="text" class="form_control" id="amount" placeholder="Amount"
+                    required [(ngModel)]="investment.amount" name="amount" #amount="ngModel">
+            <div [hidden]="amount.valid || amount.pristine"
+                class="alert alert-danger">
+                Amount is required
+            </div>
         </div>
         <div class="input_group">
-            <label for="category" class="form_label">Transaction Name</label>
-            <input type="text" class="form_control" id="name" placeholder="Name">
+            <label for="category" class="form_label">Transaction Title</label>
+            <input type="text" class="form_control" id="title" placeholder="Title"
+                   required [(ngModel)]="investment.title" name="title" #title="ngModel">
+            <div [hidden]="title.valid || title.pristine"
+                class="alert alert-danger">
+                Title is required
+            </div>
         </div>
         <div class="input_group btn_grp">
             <label for="category" class="form_label"></label>

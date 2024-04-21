@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 import { CommonService } from '../../../../shared/services/common.service';
+import { InvestmentModel  } from '../../investment.model'
 
 @Component({
   selector: 'app-add-investment',
@@ -12,30 +13,33 @@ export class AddInvestmentComponent implements OnInit {
   public count = 0;
   public categories = ['Equity', 'Chit', 'Mutual Fund', 'Debt Fund', 'SGB', 'Gold', 'FD', 'Other'];
   public submitted = false;
+  public investment = new InvestmentModel('', '', 0, '');
+
   constructor(private commonService: CommonService) { }
 
   ngOnInit(): void {
     this.count++;
     console.log(this.count);
+    
     // this.commonService.showPopup.subscribe(value => {
     //   this.showPopup = value;
     // });
 
+  }
+  
+  addInvestment() { 
+    this.submitted = true; 
+    console.log(this.investment)
   }
 
   ngOnChanges(changes: SimpleChanges) {
     console.log(changes);
   }
 
-  onSubmit() { this.submitted = true; }
   
   increaseCount(){
     this.count++;
     console.log(this.count);
-  }
-
-  addInvestment(){
-    console.log("Save Investment");
   }
   
 }

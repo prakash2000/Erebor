@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { NgChartsModule } from 'ng2-charts';
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { BalanceCardComponent } from './features/dashboard/components/balance-card/balance-card.component';
 import { DashboardViewComponent } from './features/dashboard/pages/dashboard-view/dashboard-view.component';
@@ -26,6 +27,7 @@ import { PopupComponent } from './shared/components/popup/popup.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     NgChartsModule,
     ErrorPageComponent,
     
