@@ -11,7 +11,7 @@ export class AddInvestmentComponent implements OnInit {
 
   //public showPopup: boolean = false;
   public count = 0;
-  public categories = ['Equity', 'Chit', 'Mutual Fund', 'Debt Fund', 'SGB', 'Gold', 'FD', 'Other'];
+  public categories = ['Equity', 'Chit', 'MutualFund', 'Debt Fund', 'SGB', 'Gold', 'FD', 'Other'];
   public submitted = false;
   public investment = new InvestmentModel('', '', 0, '');
 
