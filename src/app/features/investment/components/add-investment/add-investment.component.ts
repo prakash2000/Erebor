@@ -27,9 +27,13 @@ export class AddInvestmentComponent implements OnInit {
 
   }
   
-  addInvestment() { 
+  addInvestment() {
     this.submitted = true; 
     console.log(this.investment)
+  }
+
+  updateInvestment() {
+    this.submitted = true;
   }
 
   ngOnChanges(changes: SimpleChanges) {
