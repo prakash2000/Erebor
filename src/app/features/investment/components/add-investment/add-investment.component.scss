@@ -8,6 +8,7 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
+   gap: 4px;
    &.btn_grp{
       justify-content: end;
    }
@@ -26,7 +27,7 @@
       border-radius: 3px;
       border: 1px solid #434343;
       // margin-right: 10px;
-      width: 110px;
+      width: 75px;
       cursor: pointer;
       transition: 0.255s ease-in;
       &:hover{
@@ -41,10 +42,11 @@
    }
    .cancel_btn{
       background-color: transparent;
-      color: #fff;
+      color: #333;
       padding: 10px 15px;
       border-radius: 3px;
       border: 1px solid #aaa;
+      width: 80px;
       cursor: pointer;
       transition: 0.5s ease-in;
    }

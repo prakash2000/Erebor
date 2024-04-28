@@ -1,7 +1,7 @@
 <!-- <app-popup [showPopup]="showPopup">
 </app-popup> -->
 <div class="add_invest_form">
-    <form (ngSubmit)="addInvestment()" #investmentForm="ngForm">
+    <form (ngSubmit)="addInvestment()" #investForm="ngForm">
         <div class="input_group">
             <label for="category" class="form_label">Category Type</label>
             <!-- <input type="text" class="form_control" id="category" placeholder="Category"> -->
@@ -39,9 +39,18 @@
             </div>
         </div>
         <div class="input_group btn_grp">
-            <label for="category" class="form_label"></label>
-            <button type="submit" class="submit_btn" [disabled]="true">Add</button>
+            <!-- <label for="category" class="form_label"></label> -->
+            <button type="submit" class="submit_btn" [disabled]="!investForm.form.valid">Add</button>
+            <button type="submit" class="cancel_btn" (click)="investForm.reset()" [disabled]="!investForm.form.valid">Clear</button>
         </div>
     </form>
+    <div [hidden]="!submitted">
+        <ul>
+            <li>{{investment.category}}</li>
+            <li>{{investment.date}}</li>
+            <li>{{investment.amount}}</li>
+            <li>{{investment.title}}</li>            
+        </ul>
+    </div>
 </div>
    
