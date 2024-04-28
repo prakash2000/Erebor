@@ -44,5 +44,13 @@
             <button type="submit" class="cancel_btn" (click)="investForm.reset()" [disabled]="!investForm.form.valid">Clear</button>
         </div>
     </form>
+    <div [hidden]="!submitted">
+        <ul>
+            <li>{{investment.category}}</li>
+            <li>{{investment.date}}</li>
+            <li>{{investment.amount}}</li>
+            <li>{{investment.title}}</li>            
+        </ul>
+    </div>
 </div>
    
