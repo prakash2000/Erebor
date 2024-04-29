@@ -11,3 +11,4 @@ Add investments based on category
 Loan and EMI tracker
 Integrate chart.js library
 Push notification integration 
+Releae planed to June 2024
