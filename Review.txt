@@ -9,4 +9,4 @@ SCSS
 NestJS
 NgRX
 RxJs
-Postgre SQL
+Postgre SQL/Sqlite 
