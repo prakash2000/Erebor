@@ -29,6 +29,7 @@ export class AddInvestmentComponent implements OnInit {
   
   addInvestment() {
     this.submitted = true;
+    console.log("Investment added successfully");
     console.log(this.investment);
   }
 
