@@ -45,13 +45,20 @@
         </div>
     </form>
     <div [hidden]="!submitted">
-        <h4>Recent Investments</h4>
+        <h4>Form Values</h4>
         <ul>
             <li>{{investment.category}}</li>
             <li>{{investment.date}}</li>
             <li>{{investment.amount}}</li>
             <li>{{investment.title}}</li>
         </ul>
+    </div>
+    <div>
+        <h4>Recent Investments</h4>
+        <div class="recent_invest" *ngFor="let invest of recentInvestments; index as i">
+            <span>{{invest.amount}}</span>
+            <span>{{invest.title}}</span>
+        </div>
     </div>
 </div>
    
