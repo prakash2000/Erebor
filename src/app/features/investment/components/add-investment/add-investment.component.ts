@@ -14,6 +14,7 @@ export class AddInvestmentComponent implements OnInit {
   public categories = ['Equity', 'Chit', 'MutualFund', 'Debt Fund', 'SGB', 'Gold', 'FD', 'Other'];
   public submitted = false;
   public investment = new InvestmentModel('', '', 0, '');
+  public recentInvestments: any[] = [];
 
   constructor(private commonService: CommonService) { }
 
@@ -31,6 +32,7 @@ export class AddInvestmentComponent implements OnInit {
     this.submitted = true;
     console.log("Investment added successfully");
     console.log(this.investment);
+    this.recentInvestments.push(this.investment);
   }
 
   updateInvestment() {

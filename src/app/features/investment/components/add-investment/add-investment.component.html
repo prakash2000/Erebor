@@ -45,13 +45,20 @@
         </div>
     </form>
     <div [hidden]="!submitted">
-        <h4>Recent Investments</h4>
+        <h4>Form Values</h4>
         <ul>
             <li>{{investment.category}}</li>
             <li>{{investment.date}}</li>
             <li>{{investment.amount}}</li>
             <li>{{investment.title}}</li>
         </ul>
+    </div>
+    <div>
+        <h4>Recent Investments</h4>
+        <div>
+            <span>{{investment.amount}}</span>
+            <span>{{investment.title}}</span>
+        </div>
     </div>
 </div>
    
