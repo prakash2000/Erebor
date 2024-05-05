@@ -55,4 +55,7 @@
 .recent_invest{
    display: flex;
    justify-content: space-between;
+   span{
+      font-weight: bold;
+   }
 }

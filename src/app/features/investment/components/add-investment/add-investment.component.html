@@ -55,10 +55,12 @@
     </div>
     <div>
         <h4>Recent Investments</h4>
-        <div class="recent_invest" *ngFor="let invest of recentInvestments; index as i">
-            <span>{{invest.amount}}</span>
-            <span>{{invest.title}}</span>
-        </div>
+        @for (invest of recentInvestments; track $index) {
+            <div class="recent_invest">
+                <label>{{invest.title}}</label>
+                <span>{{invest.amount}}</span>
+            </div>
+        }
     </div>
 </div>
    
