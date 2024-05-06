@@ -21,7 +21,7 @@ export class AddInvestmentComponent implements OnInit {
   ngOnInit(): void {
     this.count++;
     console.log(this.count);
-    this.recentInvestments.push({type: "Equity", date: '05-05-24', amount:8000, title:'Equity Invest'})
+    this.recentInvestments.push({category: "Equity", date: '05-05-24', amount:8000, title:'Equity Purchase'})
     // this.commonService.showPopup.subscribe(value => {
     //   this.showPopup = value;
     // });
@@ -31,7 +31,7 @@ export class AddInvestmentComponent implements OnInit {
   addInvestment() {
     this.submitted = true;
     console.log("Investment added successfully");
-    console.log(this.investment);
+    console.log(this.investment.title);
     this.recentInvestments.push(this.investment);
   }
 

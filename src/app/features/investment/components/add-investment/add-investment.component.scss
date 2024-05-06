@@ -55,7 +55,22 @@
 .recent_invest{
    display: flex;
    justify-content: space-between;
-   span{
-      font-weight: bold;
+   align-items: center;
+   .invest_title{
+      label{
+         font-size: 15px;
+         color: #000;
+      }
+      span{
+         font-size: 12px;
+         color: #555;
+         display: block;
+         font-weight: 400;
+      }
+   }
+   .invest_amount{
+      color: #55f255;
+      font-size: 16px;
+
    }
 }

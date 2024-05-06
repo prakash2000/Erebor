@@ -57,11 +57,11 @@
         <h4>Recent Investments</h4>
         @for (invest of recentInvestments; track $index) {
             <div class="recent_invest">
-                <label>
-                    <span>{{invest.title}}</span>
-                    <div>{{investment.category}}</div>
-                </label>
-                <span>{{invest.amount}}</span>
+                <div class="invest_title">
+                    <label>{{invest.title}}</label>
+                    <span>{{invest.category}}</span>
+                </div>
+                <span class="invest_amount">+ {{invest.amount}}</span>
             </div>
         }
     </div>
