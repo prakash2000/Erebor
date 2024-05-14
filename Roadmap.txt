@@ -7,6 +7,7 @@ Add Expense Tracker with various categories
 Spending analysis Graph
 Networth card design
 Loan details card design
+Design a flyout for adding new investment categories
 Add investments based on category
 Loan and EMI tracker
 Integrate chart.js library
