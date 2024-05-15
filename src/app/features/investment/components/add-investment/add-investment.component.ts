@@ -21,7 +21,8 @@ export class AddInvestmentComponent implements OnInit {
   ngOnInit(): void {
     this.count++;
     console.log(this.count);
-    this.recentInvestments.push({category: "Equity", date: '05-05-24', amount:8000, title:'Equity Purchase'})
+    this.recentInvestments.push({category: "Pk Equity", date: '05-05-24', amount:8000, title:'Equity Purchase'});
+    this.recentInvestments.push({category: "Pk Equity", date: '15-05-24', amount:6000, title:'Equity Purchase'});
     // this.commonService.showPopup.subscribe(value => {
     //   this.showPopup = value;
     // });
