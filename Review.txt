@@ -3,8 +3,8 @@ Integration Test
 CI/CD Pipeline Integration
 SonarQube: Code Quality and Code Security
 Azure Instance creation
-Angular 14
-Bootstrap 5
+Angular 18
+Tailwind CSS
 SCSS
 NestJS
 NgRX
