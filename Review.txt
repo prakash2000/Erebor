@@ -1,11 +1,12 @@
 Technologies Used:
-Integration Test
+Frontend Stack:
 CI/CD Pipeline Integration
 SonarQube: Code Quality and Code Security
 Azure Instance creation
 Angular 18
 Tailwind CSS
 SCSS
+Backend Stack:
 NestJS
 NgRX
 RxJs
