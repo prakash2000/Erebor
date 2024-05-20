@@ -9,6 +9,7 @@
    justify-content: space-between;
    align-items: center;
    gap: 4px;
+   position: relative;
    &.btn_grp{
       justify-content: end;
    }
@@ -19,6 +20,18 @@
    }
    .form_control{
       width: 55%;
+   }
+   .alert{
+      position: absolute;
+      top: 32px;
+      right: 0px;
+      z-index: 99;
+      font-size: 12px;
+      background: #fff;
+      color: tomato;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+      border: 1px solid #ccc;
    }
    .submit_btn{
       background-color: #4762E6;
