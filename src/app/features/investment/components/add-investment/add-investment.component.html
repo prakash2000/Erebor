@@ -7,7 +7,7 @@
             <!-- <input type="text" class="form_control" id="category" placeholder="Category"> -->
             <select class="form_control select_box" id="category"
                     required [(ngModel)]="investment.category" name="category" #category="ngModel">
-                <option value="" selected disabled hidden>Select</option>
+                <option value="" selected>Select</option>
                 <option *ngFor="let category of categories" [value]="category">{{category}}
             </select>            
         </div>
