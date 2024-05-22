@@ -10,4 +10,4 @@ Backend Stack:
 NestJS
 NgRX
 RxJs
-Postgre SQL/Sqlite 
+Postgre SQL
