@@ -11,5 +11,6 @@ Design a flyout for adding new investment categories
 Add investments based on category
 Loan and EMI tracker
 Integrate chart.js library
-Push notification integration 
+Push notification integration
+Recent investment list
 Releae planed to June 2024 with the above mentioned features
