@@ -24,6 +24,7 @@ export class AddInvestmentComponent implements OnInit {
     this.recentInvestments.push({category: "Pk Equity", date: '05-05-24', amount:8000, title:'Equity Purchase'});
     this.recentInvestments.push({category: "Pk Equity", date: '15-05-24', amount:6000, title:'Equity Purchase'});
     this.recentInvestments.push({category: "Pk Coin", date: '15-05-24', amount:5000, title:'MF Purchase'});
+    this.recentInvestments.push({category: "Sow Coin", date: '25-05-24', amount:7000, title:'MF Purchase'});
     // this.commonService.showPopup.subscribe(value => {
     //   this.showPopup = value;
     // });
