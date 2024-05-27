@@ -6,9 +6,8 @@ Azure Instance creation
 Angular 18
 Tailwind CSS
 SCSS
+RxJs
 Backend Stack:
 NestJS
 TypeORM
-NgRX
-RxJs
 Postgre SQL
