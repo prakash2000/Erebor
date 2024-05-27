@@ -8,6 +8,7 @@ Tailwind CSS
 SCSS
 Backend Stack:
 NestJS
+TypeORM
 NgRX
 RxJs
 Postgre SQL
