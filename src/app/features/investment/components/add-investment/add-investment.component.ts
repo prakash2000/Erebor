@@ -12,8 +12,9 @@ export class AddInvestmentComponent implements OnInit {
   //public showPopup: boolean = false;
   public count = 0;
   public categories = ['Equity', 'Chit', 'MutualFund', 'Debt Fund', 'SGB', 'Gold', 'FD', 'Other'];
+  public accounts = ['PK Equity', 'Kadri Chit', 'SKL Chit', 'Sow Equity', 'PK Coin', 'Sow FD'];
   public submitted = false;
-  public investment = new InvestmentModel('', '', 0, '');
+  public investment = new InvestmentModel('', '', '', 0, '');
   public recentInvestments: any[] = [];
 
   constructor(private commonService: CommonService) { }
@@ -21,11 +22,11 @@ export class AddInvestmentComponent implements OnInit {
   ngOnInit(): void {
     this.count++;
     console.log(this.count);
-    this.recentInvestments.push({category: "Pk Equity", date: '05-05-24', amount:8000, title:'Equity Purchase'});
-    this.recentInvestments.push({category: "Pk Equity", date: '15-05-24', amount:6000, title:'Equity Purchase'});
-    this.recentInvestments.push({category: "Pk Coin", date: '15-05-24', amount:5000, title:'MF Purchase'});
-    this.recentInvestments.push({category: "Sow Coin", date: '25-05-24', amount:7000, title:'MF Purchase'});
-    this.recentInvestments.push({category: "NPS", date: '25-05-24', amount:4000, title:'NPS Invest'});
+    this.recentInvestments.push({category: "Equity", date: '05-05-24', amount:8000, note:'Equity Purchase'});
+    this.recentInvestments.push({category: "Equity", date: '15-05-24', amount:6000, note:'Equity Purchase'});
+    this.recentInvestments.push({category: "Coin", date: '15-05-24', amount:5000, note:'MF Purchase'});
+    this.recentInvestments.push({category: "Coin", date: '25-05-24', amount:7000, note:'MF Purchase'});
+    this.recentInvestments.push({category: "NPS", date: '25-05-24', amount:4000, note:'NPS Invest'});
     // this.commonService.showPopup.subscribe(value => {
     //   this.showPopup = value;
     // });
@@ -35,7 +36,7 @@ export class AddInvestmentComponent implements OnInit {
   addInvestment() {
     this.submitted = true;
     console.log("Investment added successfully");
-    console.log(this.investment.title);
+    console.log(this.investment.note);
     this.recentInvestments.push(this.investment);
   }
 
