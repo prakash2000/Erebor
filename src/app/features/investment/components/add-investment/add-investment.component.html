@@ -14,10 +14,10 @@
         <div class="input_group">
             <label for="category" class="form_label">Transaction Account</label>
             <!-- <input type="text" class="form_control" id="category" placeholder="Category"> -->
-            <select class="form_control select_box" id="category"
-                    required [(ngModel)]="investment.category" name="category" #category="ngModel">
+            <select class="form_control select_box" id="account"
+                    required [(ngModel)]="investment.account" name="account" #account="ngModel">
                 <option value="" selected>Select</option>
-                <option *ngFor="let category of categories" [value]="category">{{category}}
+                <option *ngFor="let account of accounts" [value]="account">{{account}}
             </select>            
         </div>
         <div class="input_group">
@@ -39,12 +39,12 @@
             </div>
         </div>
         <div class="input_group">
-            <label for="category" class="form_label">Transaction Notes</label>
-            <input type="text" class="form_control" id="title" placeholder="Title"
-                   required [(ngModel)]="investment.title" name="title" #title="ngModel">
-            <div [hidden]="title.valid || title.pristine"
+            <label for="category" class="form_label">Transaction Note</label>
+            <input type="text" class="form_control" id="note" placeholder="Note"
+                   required [(ngModel)]="investment.note" name="note" #note="ngModel">
+            <div [hidden]="note.valid || note.pristine"
                 class="alert alert-danger">
-                Investment Title is required
+                Investment Note is required
             </div>
         </div>
         <div class="input_group btn_grp">
@@ -59,7 +59,7 @@
             <li>{{investment.category}}</li>
             <li>{{investment.date}}</li>
             <li>{{investment.amount}}</li>
-            <li>{{investment.title}}</li>
+            <li>{{investment.note}}</li>
         </ul>
     </div>
     <div>
