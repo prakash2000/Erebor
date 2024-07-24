@@ -2,6 +2,7 @@ Technologies Used:
 Frontend Stack:
 CI/CD Pipeline Integration
 SonarQube: Code Quality and Code Security
+SCA and SAST
 Azure Instance creation
 Angular 18
 Tailwind CSS
