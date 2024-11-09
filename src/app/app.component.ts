@@ -15,5 +15,6 @@ export class AppComponent {
 
   public showPopup(){
     this.commonService.openPopup(true);
+    console.log(this.showAddItem);
   }
 }
