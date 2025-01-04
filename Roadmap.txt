@@ -1,5 +1,5 @@
 Project Road Map:
-Q4 2024:
+Q1 2025:
 Release Erebor 1.0 with basic functionalities 
 Add asset management page
 Add liability management page
