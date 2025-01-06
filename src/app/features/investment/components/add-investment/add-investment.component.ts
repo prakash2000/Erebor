@@ -23,8 +23,8 @@ export class AddInvestmentComponent implements OnInit {
     this.count++;
     console.log(this.count);
     this.recentInvestments.push({category: "Equity", date: '05-05-24', amount:8000, note:'Equity Purchase'});
-    this.recentInvestments.push({category: "Chit", date: '15-05-24', amount:6000, note:'Stock Purchase'});
-    this.recentInvestments.push({category: "Gold", date: '15-05-24', amount:5000, note:'MF Purchase'});
+    this.recentInvestments.push({category: "Chit", date: '15-05-24', amount:6000, note:'Chit Investment'});
+    this.recentInvestments.push({category: "Gold", date: '15-05-24', amount:5000, note:'Gold bees'});
     this.recentInvestments.push({category: "Coin", date: '25-08-24', amount:7000, note:'MF Investment'});
     this.recentInvestments.push({category: "NPS", date: '25-12-24', amount:4000, note:'NPS Invest'});
     console.log(this.recentInvestments);
