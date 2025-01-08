@@ -3,7 +3,7 @@ Frontend Stack:
 CI/CD Pipeline Integration
 SonarQube: Code Quality and Code Security
 SCA and SAST Scan integration
-Azure Instance creation
+HTML 5
 Angular 19
 Tailwind CSS
 SCSS
