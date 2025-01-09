@@ -4,6 +4,7 @@ CI/CD Pipeline Integration
 SonarQube: Code Quality and Code Security
 SCA and SAST Scan integration
 HTML 5
+TypeScript
 Angular 19
 Tailwind CSS
 SCSS
