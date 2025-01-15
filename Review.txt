@@ -11,5 +11,6 @@ SCSS
 RxJs
 Backend Stack:
 NestJS
+Express JS
 TypeORM
 Postgre SQL
