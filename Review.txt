@@ -4,6 +4,7 @@ CI/CD Pipeline Creation (GitHub Action)
 SonarQube: Code Quality and Code Security
 SCA and SAST Scan integration
 HTML 5
+CSS 3
 TypeScript
 Angular 19
 Tailwind CSS
