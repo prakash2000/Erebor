@@ -3,3 +3,4 @@ The main purpose of Erobor is to provide the user more control over their financ
 Erebor developed using angular for front end and NestJS and express js for backend.
 With this application, users can keep track on their investments and withdrawals. 
 Erebor provides detailed analytics about users investment pattern, timely EMI reminders and networth growth summary.
+Users can use Erebor to track their financial goals. 
