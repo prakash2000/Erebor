@@ -7,7 +7,7 @@ HTML 5
 CSS 3
 TypeScript
 Angular 19
-Tailwind CSS
+Tailwind 4
 SCSS
 RxJs
 Backend Stack:
