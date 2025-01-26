@@ -6,6 +6,7 @@ SCA and SAST Scan integration
 HTML 5
 CSS 3
 TypeScript
+JavaScript
 Angular 19
 Tailwind 4
 SCSS
