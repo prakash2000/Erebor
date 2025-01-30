@@ -11,6 +11,7 @@ Angular 19
 Tailwind 4
 SCSS
 RxJs
+Cypress
 Backend Stack:
 NestJS
 Express JS
