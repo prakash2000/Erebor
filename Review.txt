@@ -1,10 +1,11 @@
-Technologies Used:
+toTechnologies Used:
 Frontend Stack:
 CI/CD Pipeline Creation (GitHub Action)
 SonarQube: Code Quality and Code Security
 SCA and SAST Scan integration
 HTML 5
 CSS 3
+Lodash
 TypeScript
 JavaScript
 Angular 19
