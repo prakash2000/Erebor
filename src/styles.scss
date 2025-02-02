@@ -32,13 +32,11 @@ h5,
 h6 {
     margin: 8px 0;
 }
-
 p {
     margin: 0;
 }
-
 a{ text-decoration: none;}
-
+a:hover{ text-decoration: none; }
 .spacer {
     flex: 1;
 }
@@ -47,8 +45,6 @@ ul{
     margin: 0;
 }
 li{ list-style: none; padding: 0;}
-a{ text-decoration: none; }
-a:hover{ text-decoration: none; }
 .common_toast{
   margin:0;
   background-color: #333;
