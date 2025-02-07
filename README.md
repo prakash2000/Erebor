@@ -15,6 +15,7 @@ TypeScript
 JavaScript  
 Angular  
 RxJS  
+Tailwind
 SCSS  
 jQuery
 
