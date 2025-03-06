@@ -14,4 +14,4 @@ Integrate chart.js library
 Push notification integration
 Recent investment list
 Account withdrawal feature
-Releae planed to February 2025 with the above mentioned features
+Releae planed to March 2025 with the above mentioned features
