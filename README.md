@@ -15,8 +15,7 @@ TypeScript
 JavaScript  
 Angular  
 RxJS  
-Tailwind CSS  
-jQuery
+Tailwind CSS
 
 NodeJS  
 NestJS  
