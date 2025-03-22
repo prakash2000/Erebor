@@ -1,4 +1,4 @@
-Erebor helps to manage your personal finance and asset details securely.
+Erebor helps to manage your personal finance, assets and liability details securely.
 The main purpose of Erobor is to provide the user more control over their finance management and build wealth using detailed insights.
 Erebor developed using angular for front end and NestJS and express js for backend.
 With this application, users can keep track on their investments and withdrawals. 
