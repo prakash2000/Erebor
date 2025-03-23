@@ -10,8 +10,6 @@ JavaScript
 Angular 19
 Tailwind 4
 SCSS
-jQuery
-Lodash
 RxJs
 Cypress
 Backend Stack:
