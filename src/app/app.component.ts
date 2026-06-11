@@ -1,11 +1,16 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { RouterOutlet } from '@angular/router';
 import { CommonService } from './shared/services/common.service'
+import { PopupComponent } from './shared/components/popup/popup.component';
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
-    standalone: false
+    standalone: true,
+    imports: [CommonModule, FormsModule, RouterOutlet, PopupComponent]
 })
 export class AppComponent {
   title = 'Erebor Wealth App';

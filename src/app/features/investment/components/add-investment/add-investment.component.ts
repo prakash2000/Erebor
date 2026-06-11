@@ -1,4 +1,6 @@
 import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { CommonService } from '../../../../shared/services/common.service';
 import { InvestmentModel  } from '../../investment.model'
 
@@ -6,7 +8,8 @@ import { InvestmentModel  } from '../../investment.model'
     selector: 'app-add-investment',
     templateUrl: './add-investment.component.html',
     styleUrls: ['./add-investment.component.scss'],
-    standalone: false
+    standalone: true,
+    imports: [CommonModule, FormsModule]
 })
 export class AddInvestmentComponent implements OnInit {
 

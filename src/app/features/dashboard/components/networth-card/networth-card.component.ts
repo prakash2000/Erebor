@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { NgChartsModule } from 'ng2-charts';
 import { ChartData, ChartEvent, ChartType, ChartConfiguration } from 'chart.js';
 
 @Component({
     selector: 'app-networth-card',
     templateUrl: './networth-card.component.html',
     styleUrls: ['./networth-card.component.scss'],
-    standalone: false
+    standalone: true,
+    imports: [CommonModule, NgChartsModule]
 })
 export class NetworthCardComponent implements OnInit {
 
