@@ -1,9 +1,8 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 import { DashboardViewComponent } from './features/dashboard/pages/dashboard-view/dashboard-view.component';
 import { ErrorPageComponent } from './shared/components/error-page/error-page.component';
 
-const routes: Routes = [
+export const routes: Routes = [
   {
     path:'home',
     component: DashboardViewComponent
@@ -18,9 +17,3 @@ const routes: Routes = [
     component: ErrorPageComponent,
   }
 ];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }

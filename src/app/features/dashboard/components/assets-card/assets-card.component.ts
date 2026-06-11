@@ -1,9 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+
 
 @Component({
-  selector: 'app-assets-card',
-  templateUrl: './assets-card.component.html',
-  styleUrls: ['./assets-card.component.scss']
+    selector: 'app-assets-card',
+    templateUrl: './assets-card.component.html',
+    styleUrls: ['./assets-card.component.scss'],
+    standalone: true,
+    changeDetection: ChangeDetectionStrategy.Eager,
+    imports: []
 })
 export class AssetsCardComponent implements OnInit {
 
