@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 import { NgChartsModule } from 'ng2-charts';
 import { ChartData, ChartEvent, ChartType, ChartConfiguration } from 'chart.js';
@@ -8,6 +8,7 @@ import { ChartData, ChartEvent, ChartType, ChartConfiguration } from 'chart.js';
     templateUrl: './networth-card.component.html',
     styleUrls: ['./networth-card.component.scss'],
     standalone: true,
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: [NgChartsModule]
 })
 export class NetworthCardComponent implements OnInit {

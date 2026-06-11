@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 import { CommonService } from '../../services/common.service'
 
@@ -7,6 +7,7 @@ import { CommonService } from '../../services/common.service'
     templateUrl: './popup.component.html',
     styleUrls: ['./popup.component.scss'],
     standalone: true,
+    changeDetection: ChangeDetectionStrategy.Eager,
     imports: []
 })
 export class PopupComponent implements OnInit {
