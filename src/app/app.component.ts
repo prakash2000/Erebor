@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output, ChangeDetectionStrategy } from '@angular/core';
-
+import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { CommonService } from './shared/services/common.service'
@@ -11,7 +11,7 @@ import { PopupComponent } from './shared/components/popup/popup.component';
     styleUrls: ['./app.component.scss'],
     standalone: true,
     changeDetection: ChangeDetectionStrategy.Eager,
-    imports: [FormsModule, RouterOutlet, PopupComponent]
+    imports: [CommonModule, FormsModule, RouterOutlet, PopupComponent]
 })
 export class AppComponent {
   title = 'Erebor Wealth App';
