@@ -1,78 +1,80 @@
 <!-- <app-popup [showPopup]="showPopup">
 </app-popup> -->
 <div class="add_invest_form">
-    <form (ngSubmit)="addInvestment()" #investForm="ngForm">
-        <div class="input_group">
-            <label for="category" class="form_label">Category Type</label>
-            <!-- <input type="text" class="form_control" id="category" placeholder="Category"> -->
-            <select class="form_control select_box" id="category"
-                    required [(ngModel)]="investment.category" name="category" #category="ngModel">
-                <option value="" selected>Select</option>
-                <option *ngFor="let category of categories" [value]="category">{{category}}
-            </select>            
+  <form (ngSubmit)="addInvestment()" #investForm="ngForm">
+    <div class="input_group">
+      <label for="category" class="form_label">Category Type</label>
+      <!-- <input type="text" class="form_control" id="category" placeholder="Category"> -->
+      <select class="form_control select_box" id="category"
+        required [(ngModel)]="investment.category" name="category" #category="ngModel">
+        <option value="" selected>Select</option>
+        @for (category of categories; track category) {
+          <option [value]="category">{{category}}
+            }{{category}}
+          </select>
         </div>
         <div class="input_group">
-            <label for="category" class="form_label">Transaction Account</label>
-            <!-- <input type="text" class="form_control" id="category" placeholder="Category"> -->
-            <select class="form_control select_box" id="account"
-                    required [(ngModel)]="investment.account" name="account" #account="ngModel">
-                <option value="" selected>Select</option>
-                <option *ngFor="let account of accounts" [value]="account">{{account}}
-            </select>            
-        </div>
-        <div class="input_group">
+          <label for="category" class="form_label">Transaction Account</label>
+          <!-- <input type="text" class="form_control" id="category" placeholder="Category"> -->
+          <select class="form_control select_box" id="account"
+            required [(ngModel)]="investment.account" name="account" #account="ngModel">
+            <option value="" selected>Select<@for (account of accounts; track account) {
+              /option="let account of accounts" [value]="account"
+              }counts" [value]="account">{{account}}
+            </select>
+          </div>
+          <div class="input_group">
             <label for="category" class="form_label">Transaction Date</label>
             <input type="date" class="form_control" id="date" placeholder="Date"
-                   required [(ngModel)]="investment.date" name="date" #date="ngModel">
-            <div [hidden]="date.valid || date.pristine"
+              required [(ngModel)]="investment.date" name="date" #date="ngModel">
+              <div [hidden]="date.valid || date.pristine"
                 class="alert alert-danger">
                 Date is required
+              </div>
             </div>
-        </div>
-        <div class="input_group">
-            <label for="category" class="form_label">Transaction Amount</label>
-            <input type="text" class="form_control" id="amount" placeholder="Amount"
-                    required [(ngModel)]="investment.amount" name="amount" #amount="ngModel">
-            <div [hidden]="amount.valid || amount.pristine"
-                class="alert alert-danger">
-                Amount is required
-            </div>
-        </div>
-        <div class="input_group">
-            <label for="category" class="form_label">Transaction Note</label>
-            <input type="text" class="form_control" id="note" placeholder="Note"
-                   required [(ngModel)]="investment.note" name="note" #note="ngModel">
-            <div [hidden]="note.valid || note.pristine"
-                class="alert alert-danger">
-                Investment Note is required
-            </div>
-        </div>
-        <div class="input_group btn_grp">
-            <!-- <label for="category" class="form_label"></label> -->
-            <button type="submit" class="submit_btn" [disabled]="!investForm.form.valid">Add</button>
-            <button type="submit" class="cancel_btn" (click)="investForm.reset()" [disabled]="!investForm.form.valid">Clear</button>
-        </div>
-    </form>
-    <div [hidden]="!submitted">
-        <h4>Form Values</h4>
-        <ul>
-            <li>{{investment.category}}</li>
-            <li>{{investment.date}}</li>
-            <li>{{investment.amount}}</li>
-            <li>{{investment.note}}</li>
-        </ul>
-    </div>
-    <div>
-        <h4>Recent Investments</h4>
-        @for (invest of recentInvestments; track $index) {
-            <div class="recent_invest">
-                <div class="invest_title">
-                    <label>{{invest.title}}</label>
-                    <span>{{invest.category}}</span>
+            <div class="input_group">
+              <label for="category" class="form_label">Transaction Amount</label>
+              <input type="text" class="form_control" id="amount" placeholder="Amount"
+                required [(ngModel)]="investment.amount" name="amount" #amount="ngModel">
+                <div [hidden]="amount.valid || amount.pristine"
+                  class="alert alert-danger">
+                  Amount is required
                 </div>
-                <span class="invest_amount">+ {{invest.amount}}</span>
+              </div>
+              <div class="input_group">
+                <label for="category" class="form_label">Transaction Note</label>
+                <input type="text" class="form_control" id="note" placeholder="Note"
+                  required [(ngModel)]="investment.note" name="note" #note="ngModel">
+                  <div [hidden]="note.valid || note.pristine"
+                    class="alert alert-danger">
+                    Investment Note is required
+                  </div>
+                </div>
+                <div class="input_group btn_grp">
+                  <!-- <label for="category" class="form_label"></label> -->
+                  <button type="submit" class="submit_btn" [disabled]="!investForm.form.valid">Add</button>
+                  <button type="submit" class="cancel_btn" (click)="investForm.reset()" [disabled]="!investForm.form.valid">Clear</button>
+                </div>
+              </form>
+              <div [hidden]="!submitted">
+                <h4>Form Values</h4>
+                <ul>
+                  <li>{{investment.category}}</li>
+                  <li>{{investment.date}}</li>
+                  <li>{{investment.amount}}</li>
+                  <li>{{investment.note}}</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Recent Investments</h4>
+                @for (invest of recentInvestments; track $index) {
+                  <div class="recent_invest">
+                    <div class="invest_title">
+                      <label>{{invest.title}}</label>
+                      <span>{{invest.category}}</span>
+                    </div>
+                    <span class="invest_amount">+ {{invest.amount}}</span>
+                  </div>
+                }
+              </div>
             </div>
-        }
-    </div>
-</div>
-   

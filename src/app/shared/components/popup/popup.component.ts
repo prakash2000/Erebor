@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { CommonService } from '../../services/common.service'
 
 @Component({
@@ -7,7 +7,7 @@ import { CommonService } from '../../services/common.service'
     templateUrl: './popup.component.html',
     styleUrls: ['./popup.component.scss'],
     standalone: true,
-    imports: [CommonModule]
+    imports: []
 })
 export class PopupComponent implements OnInit {
 

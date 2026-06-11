@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 
 @Component({
     selector: 'app-assets-card',
     templateUrl: './assets-card.component.html',
     styleUrls: ['./assets-card.component.scss'],
     standalone: true,
-    imports: [CommonModule]
+    imports: []
 })
 export class AssetsCardComponent implements OnInit {
 

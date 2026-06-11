@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { BalanceCardComponent } from '../../components/balance-card/balance-card.component';
 import { AssetsCardComponent } from '../../components/assets-card/assets-card.component';
 import { NetworthCardComponent } from '../../components/networth-card/networth-card.component';
@@ -11,7 +11,7 @@ import { AddInvestmentComponent } from '../../../investment/components/add-inves
     templateUrl: './dashboard-view.component.html',
     styleUrls: ['./dashboard-view.component.scss'],
     standalone: true,
-    imports: [CommonModule, BalanceCardComponent, AssetsCardComponent, NetworthCardComponent, LoanCardComponent, AddInvestmentComponent]
+    imports: [BalanceCardComponent, AssetsCardComponent, NetworthCardComponent, LoanCardComponent, AddInvestmentComponent]
 })
 export class DashboardViewComponent implements OnInit {
 

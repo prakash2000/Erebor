@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { NgChartsModule } from 'ng2-charts';
 import { ChartData, ChartEvent, ChartType, ChartConfiguration } from 'chart.js';
 
@@ -8,7 +8,7 @@ import { ChartData, ChartEvent, ChartType, ChartConfiguration } from 'chart.js';
     templateUrl: './networth-card.component.html',
     styleUrls: ['./networth-card.component.scss'],
     standalone: true,
-    imports: [CommonModule, NgChartsModule]
+    imports: [NgChartsModule]
 })
 export class NetworthCardComponent implements OnInit {
 
