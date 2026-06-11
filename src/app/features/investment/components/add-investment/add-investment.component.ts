@@ -3,9 +3,10 @@ import { CommonService } from '../../../../shared/services/common.service';
 import { InvestmentModel  } from '../../investment.model'
 
 @Component({
-  selector: 'app-add-investment',
-  templateUrl: './add-investment.component.html',
-  styleUrls: ['./add-investment.component.scss']
+    selector: 'app-add-investment',
+    templateUrl: './add-investment.component.html',
+    styleUrls: ['./add-investment.component.scss'],
+    standalone: false
 })
 export class AddInvestmentComponent implements OnInit {
 

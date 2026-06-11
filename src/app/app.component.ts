@@ -2,9 +2,10 @@ import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonService } from './shared/services/common.service'
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss'],
+    standalone: false
 })
 export class AppComponent {
   title = 'Erebor Wealth App';
