@@ -29,7 +29,6 @@
     "@angular-devkit/build-angular": "^17.3.4",
     "@angular/cli": "^17.3.4",
     "@angular/compiler-cli": "^17.3.4",
-    "@tailwindcss/postcss": "^4.2.2",
     "@types/jasmine": "~5.1.1",
     "jasmine-core": "~5.1.1",
     "karma": "~6.4.2",
@@ -37,12 +36,6 @@
     "karma-coverage": "~2.2.1",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "tailwindcss": "^4.2.2",
     "typescript": "~5.4.5"
-  },
-  "overrides": {
-    "tailwindcss": {
-      "postcss": "^8.4.47"
-    }
   }
 }
